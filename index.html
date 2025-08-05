@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Currículo - Augusto César</title>
+  <script type="module" src="script.js"></script>
   <style>
     * {
       box-sizing: border-box;
@@ -89,6 +90,28 @@
       color: #103e75;
     }
 
+    .pdf-button {
+      background-color: #124e9c;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      transition: background-color 0.3s ease;
+      font-family: inherit;
+    }
+
+    .pdf-button:hover {
+      background-color: #103e75;
+    }
+
+    .pdf-button:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+
     @media (max-width: 768px) {
       .container {
         padding: 30px 20px;
@@ -107,6 +130,8 @@
 </head>
 <body>
   <div class="container">
+    <button id="pdf-button" class="pdf-button">📄 Gerar PDF</button>
+    
     <div class="header">
       <img src="foto.jpg" alt="Foto de perfil" class="profile-pic">
       <div class="header-info">
