@@ -1,0 +1,122 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ecf3fb;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      padding: 50px 60px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #dce6f1;
+    }
+
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-info h1 {
+      font-size: 28px;
+      color: #124e9c;
+      margin-bottom: 5px;
+    }
+
+    .header-info p {
+      font-size: 14px;
+      margin: 3px 0;
+      color: #4f6b8a;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #cfddee;
+      color: #124e9c;
+    }
+
+    .section p, .section ul {
+      font-size: 15px;
+      color: #2f3e4d;
+      margin-top: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #1a4e8a;
+      text-decoration: none;
+      transition: 0.2s ease-in-out;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #103e75;
+    }
+
+    .pdf-button {
+      background-color: #124e9c;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      transition: background-color 0.3s ease;
+      font-family: inherit;
+    }
+
+    .pdf-button:hover {
+      background-color: #103e75;
+    }
+
+    .pdf-button:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-pic {
+        margin-bottom: 20px;
+      }
+    }
+    
